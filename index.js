@@ -18,12 +18,12 @@ function lcg_parkmiller(seed) {
     }
 
     function _randomBytes(sz) {
-	const lchunks = Math.ceil(sz / 4);
-	let buf = new Uint32Array(lchunks)
-	    for(i = 0; i < lchunks; i++) {
-		buf[i] =  seed = (seed * 48271) & 2147483647;
-	    }
-	    return new Uint8Array(buf.buffer, 0, sz)
+        const lchunks = Math.ceil(sz / 4);
+        let buf = new Uint32Array(lchunks);
+        for(i = 0; i < lchunks; i++) {
+            buf[i] =  seed = (seed * 48271) & 2147483647;
+        }
+        return new Uint8Array(buf.buffer, 0, sz);
     }
 
     if (seed === undefined) {

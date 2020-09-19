@@ -9,3 +9,9 @@ randomBytes(5);
 // Uint8Array(5) [ 226, 134, 254, 127, 62 ]
 ```
 
+### Benchmark
+```js
+const benchmark = require("lcg-bytes/benchmark");
+benchmark();
+```
+
