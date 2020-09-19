@@ -1,0 +1,11 @@
+{
+  "name": "lcg-bytes",
+  "version": "1.0.0",
+  "description": "Fast insecure js-only lcg random bytes generator",
+  "main": "index.js",
+  "scripts": {
+    "benchmark": "node benchmark.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
