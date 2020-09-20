@@ -1,5 +1,7 @@
 let {randomBytes} = require(".");
 
+const mb = 1 << 20;
+
 function bench(sz, n) {
     const d1=new Date();
     for(let i=0; i<n; i++) {
@@ -11,7 +13,6 @@ function bench(sz, n) {
 }
 
 function run_benchmark() {
-    const mb = 1 << 20;
     bench(4 * mb, 10);
     bench(64 * mb, 10);
 }

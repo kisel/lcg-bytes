@@ -1,5 +1,5 @@
 function rnd_uint32(seed) {
-    return (Math.random * 4294967296) >>> 0;
+    return (Math.random() * 4294967296) >>> 0;
 }
 
 function lcg_parkmiller(seed) {
@@ -44,6 +44,7 @@ const rnd = lcg_parkmiller();
 
 module.exports = {
     lcg_parkmiller: lcg_parkmiller,
+    rnd_uint32: rnd_uint32,
     nextInt: rnd.nextInt,
     nextFloat: rnd.nextFloat,
     randomBytes: rnd.randomBytes
